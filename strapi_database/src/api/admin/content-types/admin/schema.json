@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admins",
+  "info": {
+    "singularName": "admin",
+    "pluralName": "admins",
+    "displayName": "admins"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "admin_username": {
+      "type": "string"
+    },
+    "admin_password": {
+      "type": "string"
+    }
+  }
+}

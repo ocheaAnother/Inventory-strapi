@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personnel_borrowers",
+  "info": {
+    "singularName": "personnel-borrower",
+    "pluralName": "personnel-borrowers",
+    "displayName": "personnel_borrower"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "personnel_id": {
+      "type": "string"
+    },
+    "borrowed_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::borrowed-item.borrowed-item",
+      "mappedBy": "personnel_borrower"
+    }
+  }
+}

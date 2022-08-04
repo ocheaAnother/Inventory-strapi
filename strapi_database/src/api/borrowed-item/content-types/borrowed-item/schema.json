@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "borrowed_items",
+  "info": {
+    "singularName": "borrowed-item",
+    "pluralName": "borrowed-items",
+    "displayName": "borrowed_items",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property_no": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string"
+    },
+    "personnel_id": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "date_return": {
+      "type": "date"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "borrowed_item"
+    },
+    "student_borrower": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::student-borrower.student-borrower",
+      "inversedBy": "borrowed_items"
+    },
+    "personnel_borrower": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::personnel-borrower.personnel-borrower",
+      "inversedBy": "borrowed_items"
+    }
+  }
+}

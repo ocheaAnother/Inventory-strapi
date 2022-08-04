@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "b5dfad01-ab4a-44f4-a342-0871fa832f85",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:1337/admin/api/student-borrowers",
+    "url": "http://localhost:1337/api/admins",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-08-03T06:58:34.444Z",
+    "modified": "2022-08-03T07:09:32.241Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "\r\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a566f01b-de2a-46f3-9307-2b4c9bec3741",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:1337/admin/api/admins",
+    "url": "http://localhost:1337/admin/api/admins",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-03T07:02:53.976Z",
+    "modified": "2022-08-03T07:03:25.080Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"data\": {\r\n    \"admin_username\": \"clark.gonzales\",\r\n    \"admin_password\": \"user123\"\r\n  }\r\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "920a589c-2aac-4389-8ad3-6d7efb5a6ff5",
+    "colId": "history",
+    "containerId": "",
+    "name": "localhost:1337/admin/api/admins",
+    "url": "localhost:1337/admin/api/admins",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-08-03T07:03:59.970Z",
+    "modified": "2022-08-03T07:04:10.488Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"data\": {\r\n    \"admin_username\": \"clark.gonzales\",\r\n    \"admin_password\": \"user123\"\r\n  }\r\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

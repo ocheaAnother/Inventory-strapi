@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "singularName": "item",
+    "pluralName": "items",
+    "displayName": "items"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property_no": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "acquisition_date": {
+      "type": "date"
+    },
+    "estimated_life": {
+      "type": "string"
+    },
+    "office_designation": {
+      "type": "string"
+    },
+    "brand_serial_no": {
+      "type": "string"
+    },
+    "borrowed_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::borrowed-item.borrowed-item",
+      "inversedBy": "items"
+    }
+  }
+}

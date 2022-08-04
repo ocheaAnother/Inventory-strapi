@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_borrowers",
+  "info": {
+    "singularName": "student-borrower",
+    "pluralName": "student-borrowers",
+    "displayName": "student_borrower"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student_id": {
+      "type": "string"
+    },
+    "borrowed_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::borrowed-item.borrowed-item",
+      "mappedBy": "student_borrower"
+    }
+  }
+}
